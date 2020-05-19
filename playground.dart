@@ -52,24 +52,26 @@ void main() {
    
   // play with array
   var myArr =  [10,20,'A','Hello',2.25]; // Array must be var
-  
   // print 1 : Arrow function for Each
   myArr.forEach((n) => print(n));
-
   // print 2 : create custom function
   myArr.forEach(printArray);
   // --> End
-
   // List 
-
   List <String> myList = ['Hello','World','Donnukrit'];
   // print List same as array but fixed member type 
+  myList[1] = 'Mark';
   myList.forEach((n) => print(n));
-  
+  // list access member 
+  print(myList[0] + ' ' + myList[1]);
   List <int> intList = [1,2,3,4];
   intList.forEach((n) => print(n));
 
   // --> End 
+
+
+
+
 
 }
 void printArray(n) {
